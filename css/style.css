@@ -33,7 +33,7 @@ h3 {
 
 .about-me {
 	/*height: 675px;*/
-	height: auto;
+	height: 700px;
 	background-color: #e9f4e8;
 	color: black;
 	display: flex;
@@ -105,6 +105,7 @@ h3 {
 	height: 100vh;
 	background-color: #e9f4e8;
 	color: black;
+	max-height: 800px;
 }
 
 .all-projects {
