@@ -107,19 +107,30 @@ h3 {
 	color: black;
 }
 
+.all-projects {
+	display: flex;
+}
+
 .projects h3 {
 	padding-top: 30px;
 }
 
 .project-holder {
-	width: 100%;
-	height: 50vh;
+	width: 120vh;
+	/*height: 50vh;*/
 	display: flex;
+	flex-direction: column;
+	border: 3px solid black;
+	border-radius: 20px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	height: auto;
 }
 
 #carouselExampleIndicators {
-	width: 40%;
+	width: 90%;
 	margin-left: 5%;
+	margin-top: 15px;
 }
 
 .see-more {
@@ -127,12 +138,19 @@ h3 {
 }
 
 h4 {
+	padding-top: 15px;
 	text-align: center;
+	font-size: 28px;
 }
 
 
 .project-description {
-	width: 45%;
+	width: 90%;
 	margin-left: 5%;
 }
 
+.project-description .button-holder {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 15px;
+}
