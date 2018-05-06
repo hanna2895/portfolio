@@ -1,0 +1,138 @@
+body {
+	font-family: 'Scope One', serif;
+	background-color: black;
+	/*the green*/
+	color: #e9f4e8; 
+}
+
+.header > h1 {
+	text-align: center;
+	margin-top: 35%;
+	font-size: 90px;
+	letter-spacing: 0.1em
+}
+
+.header > h3 {
+	font-size: 40px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding-bottom: 100px;
+	padding-top: 50px;
+}
+
+.header {
+	height: 60vh;
+	overflow: visible;
+}
+
+h3 {
+	text-align: center;
+}
+
+/*-------------- about me section styles --------------------*/
+
+.about-me {
+	/*height: 675px;*/
+	height: auto;
+	background-color: #e9f4e8;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+.about-me h3, .projects h3{
+	font-size: 50px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.about-me-content {
+	margin-top: 30px;
+	margin-left: 30px;
+	width: 60%;
+	margin-right: 30px;
+/*	margin-left: auto;
+	margin-right: auto;*/
+}
+
+.about-me > .button-holder {
+	margin-left: 48px;
+	width: 100%;
+	height: 30px;
+}
+
+.about-me > img {
+	width: 30%;
+	margin-top: auto;
+	margin-bottom: auto;
+/*	margin-right: auto;
+	margin-left: auto;*/
+	border-radius: 100%;
+	margin-right: 30px;
+}
+
+.btn-dark {
+	background-color: black;
+	color: #e9f4e8;
+	font-family: 'Scope One', serif;
+	width: 120px;
+	height: 45px;
+	font-size: 20px;
+	border-radius: 8px;
+	letter-spacing: 0.1em;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+/* ------------ photo div section styles ------------------------*/
+
+.photo-div {
+	height: 300px;
+	width: 100%;
+	overflow: auto;
+}
+
+
+
+
+/* ----------------- projects section styles ---------------------*/
+
+.projects {
+	height: 100vh;
+	background-color: #e9f4e8;
+	color: black;
+}
+
+.projects h3 {
+	padding-top: 30px;
+}
+
+.project-holder {
+	width: 100%;
+	height: 50vh;
+	display: flex;
+}
+
+#carouselExampleIndicators {
+	width: 40%;
+	margin-left: 5%;
+}
+
+.see-more {
+	width: 180px;
+}
+
+h4 {
+	text-align: center;
+}
+
+
+.project-description {
+	width: 45%;
+	margin-left: 5%;
+}
+
