@@ -3,6 +3,7 @@ body {
 	background-color: black;
 	/*the green*/
 	color: #e9f4e8; 
+	min-width: 900px;
 }
 
 .header > h1 {
@@ -42,7 +43,7 @@ h3 {
 
 }
 
-.about-me h3, .projects h3{
+.about-me h3, .projects h3, .skills h3{
 	font-size: 50px;
 	text-align: center;
 	letter-spacing: 0.1em;
@@ -102,10 +103,10 @@ h3 {
 /* ----------------- projects section styles ---------------------*/
 
 .projects {
-	height: 100vh;
+	/*height: 100vh;*/
 	background-color: #e9f4e8;
 	color: black;
-	max-height: 800px;
+	max-height: 1000px;
 }
 
 .all-projects {
@@ -126,6 +127,7 @@ h3 {
 	margin-left: 2.5%;
 	margin-right: 2.5%;
 	height: auto;
+	margin-bottom: 50px;
 }
 
 #carouselExampleIndicators {
@@ -154,4 +156,30 @@ h4 {
 	display: flex;
 	justify-content: space-around;
 	padding-bottom: 15px;
+}
+
+
+/*--------------- skills section ---------------------*/
+
+.skills {
+	height: 90vh;
+	background-color: black;
+	color: #e9f4e8;
+}
+
+.skill-holder {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: 100px;
+
+}
+
+i {
+	font-size: 100px;
+	letter-spacing: 1em;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/*line-height: 1.4;*/
 }
