@@ -4,6 +4,12 @@ body {
 	/*the green*/
 	color: #e9f4e8; 
 	min-width: 900px;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	flex: 1 0 auto;
 }
 
 .header > h1 {
@@ -24,10 +30,22 @@ body {
 .header {
 	height: 60vh;
 	overflow: visible;
+
 }
 
 h3 {
 	text-align: center;
+}
+
+nav {
+	position:fixed;
+	top:0px;
+	width:100%; 
+	height:50px; 
+	background-color:#DDDDDD;
+	color: #FFFFFF;
+	z-index:9999;
+	/*display: none;*/
 }
 
 /*-------------- about me section styles --------------------*/
@@ -37,13 +55,13 @@ h3 {
 	height: 700px;
 	background-color: #e9f4e8;
 	color: black;
+	padding-bottom: 50px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-
 }
 
-.about-me h3, .projects h3, .skills h3{
+.about-me h3, .projects h3, .skills h3, .contact h3{
 	font-size: 50px;
 	text-align: center;
 	letter-spacing: 0.1em;
@@ -56,8 +74,6 @@ h3 {
 	margin-left: 30px;
 	width: 60%;
 	margin-right: 30px;
-/*	margin-left: auto;
-	margin-right: auto;*/
 }
 
 .about-me > .button-holder {
@@ -92,7 +108,7 @@ h3 {
 /* ------------ photo div section styles ------------------------*/
 
 .photo-div {
-	height: 300px;
+	height: 50px;
 	width: 100%;
 	overflow: auto;
 }
@@ -113,7 +129,7 @@ h3 {
 	display: flex;
 }
 
-.projects h3 {
+.projects h3, .contact h3 {
 	padding-top: 30px;
 }
 
@@ -162,9 +178,10 @@ h4 {
 /*--------------- skills section ---------------------*/
 
 .skills {
-	height: 90vh;
+	height: 83vh;
 	background-color: black;
 	color: #e9f4e8;
+	max-height: 850px;
 }
 
 .skill-holder {
@@ -181,5 +198,43 @@ i {
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	color: #e9f4e8;
 	/*line-height: 1.4;*/
+}
+
+/* ---------------- contact -----------------------*/
+
+.contact {
+	background-color: #e9f4e8;
+	color: black;
+	height: 50vh;
+	max-height: 1000px;
+}
+
+.contact-content {
+	width: 60%;
+	margin-left: 30px;
+}
+
+.contact p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.contact a {
+	color: black;
+}
+
+/*----------------- footer -------------------------*/
+
+footer {
+	/*margin-top: -50px;*/
+	text-align: center;
+	padding-top: 15px;
+	position: sticky;
+	flex-shrink: 0;
+}
+
+footer a {
+	color:  #e9f4e8;
 }
