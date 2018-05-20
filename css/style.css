@@ -113,6 +113,10 @@ nav a {
 	margin-top: 20px;
 }
 
+.hidden-img {
+	display: none;
+}
+
 /* ------------ photo div section styles ------------------------*/
 
 .photo-div {
@@ -135,6 +139,8 @@ nav a {
 
 .all-projects {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .projects h3, .contact h3, .skills h3 {
@@ -142,7 +148,7 @@ nav a {
 }
 
 .project-holder {
-	width: 100%;
+	width: 45%;
 	/*height: 50vh;*/
 	display: flex;
 	flex-direction: column;
@@ -154,6 +160,10 @@ nav a {
 	margin-bottom: 50px;
 }
 
+.highlight {
+	width: 75%;
+}
+
 #carouselExampleIndicators {
 	width: 90%;
 	margin-left: 5%;
@@ -162,6 +172,12 @@ nav a {
 
 .see-more {
 	width: 180px;
+}
+
+.full-stack {
+	width: 100%;
+	font-size: 18px;
+	line-height: 1.2em;
 }
 
 h4 {
@@ -189,6 +205,7 @@ h4 {
 	height: auto;
 	background-color: #e9f4e8;
 	color: black;
+	padding-bottom: 30px;
 	/*max-height: 850px;*/
 }
 
@@ -208,6 +225,15 @@ i {
 	margin-bottom: 20px;
 	color: black;
 	/*line-height: 1.4;*/
+}
+
+.skill {
+	display: flex;
+	flex-direction: column;
+}
+
+span {
+	letter-spacing: 0.1em;
 }
 
 /* ---------------- contact -----------------------*/
@@ -266,7 +292,7 @@ footer a {
 	.about-me {
 		flex-direction: column-reverse;
 		flex-wrap: wrap;
-		height: 140vh;
+		height: 150vh;
 		justify-content: center;
 	}
 
@@ -277,11 +303,16 @@ footer a {
 	}
 
 	.about-me img {
-		margin-left: auto;
+		/*margin-left: auto;
 		margin-right: auto;
 		width: 45%;
     	margin-top: 0;
-    	margin-bottom: 5px;
+    	margin-bottom: 5px;*/
+    	margin-left: auto;
+    	margin-right: auto;
+   	 	width: 45%;
+    	margin-top: 5px;
+    	margin-bottom: 0px;
 	}
 
 	.about-me .button-holder{
@@ -309,7 +340,8 @@ footer a {
 
 	.skills {
 		height: auto;
-		max-height: 700px;
+		/*max-height: 700px;*/
+		padding-bottom: 30px;
 	}
 
 	.skill-holder {
@@ -325,7 +357,7 @@ footer a {
 
 	.contact{
 		flex-direction: column-reverse;
-		height: 70vh;
+		height: 75vh;
 		/*flex-wrap: wrap;*/
 	}
 
@@ -346,7 +378,7 @@ footer a {
 
 }
 
-@media (max-width: 440px) {
+@media (max-width: 500px) {
 	nav {
 		font-size: 16px;
 	}
@@ -360,11 +392,15 @@ footer a {
 	}
 
 	.about-me {
-		height: 160vh;
+		height: 212vh;
 	}
 
 	.about-me .button-holder{
 		margin-bottom: 30px;
+	}
+
+	.about-me > img {
+		width: 55%;
 	}
 
 	.see-more {
@@ -390,6 +426,14 @@ footer a {
 
 	.skill-holder {
 		margin-left: 30px;
+	}
+
+	.contact {
+		height: 90vh;
+	}
+
+	.contact > img {
+		width: 55%;
 	}
 
 	.contact-content {
