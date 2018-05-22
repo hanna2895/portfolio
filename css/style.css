@@ -469,12 +469,12 @@ footer a {
 	}
 
 	.skill-holder {
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 2vw;
+		margin-right: 2vw;
 	}
 
 	span {
-		font-size: 0.7em;
+		font-size: 1.5vh;
 	}
 
 	.long {
