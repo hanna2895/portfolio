@@ -469,8 +469,8 @@ footer a {
 	}
 
 	.skill-holder {
-		margin-left: 1%;
-		margin-right: 2%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	span {
