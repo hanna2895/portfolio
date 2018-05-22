@@ -57,6 +57,11 @@ nav a {
 	color: #e9f4e8;
 }
 
+nav a:hover, footer a:hover {
+	text-decoration: none;
+	color: #9A9D9A;
+}
+
 /*-------------- about me section styles --------------------*/
 
 .about-me {
@@ -100,7 +105,7 @@ nav a {
 	margin-left: auto;*/
 	border-radius: 100%;
 	margin-right: 30px;
-	max-height: 35vh;
+	max-height: 40vh;
 }
 
 .btn-dark {
@@ -275,7 +280,7 @@ span {
 	margin-left: auto;*/
 	border-radius: 100%;
 	margin-right: 20px;
-	max-height: 35vh;
+	max-height: 40vh;
 }
 
 /*----------------- footer -------------------------*/
