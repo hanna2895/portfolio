@@ -2,11 +2,12 @@ body {
 	font-family: 'Scope One', serif;
 	background-color: black;
 	/*the green*/
-	color: #e9f4e8; 
-	min-width: 411px;
+	color: #e9f4e8;
 	display: flex;
 	flex-direction: column;
 	margin: 0;
+	max-width: 100vw;
+	overflow-x: hidden;
 }
 
 .animation {
@@ -57,8 +58,8 @@ h3 {
 nav {
 	position:fixed;
 	top:0px;
-	width:100%; 
-	height:50px; 
+	width:100%;
+	height:50px;
 	background-color:black;
 	color: #e9f4e8;
 	z-index:9999;
@@ -76,7 +77,7 @@ nav a {
 
 .about-me {
 	/*height: 675px;*/
-	height: 750px;
+	height: auto;
 	background-color: #e9f4e8;
 	color: black;
 	padding-bottom: 50px;
@@ -258,7 +259,7 @@ span {
 .contact {
 	background-color: #e9f4e8;
 	color: black;
-	height: 50vh;
+	height: auto;
 	/*max-height: 1000px;*/
 	display: flex;
 }
@@ -305,40 +306,84 @@ footer a {
 }
 
 /* --------------- media queries ---------------------*/
-@media (max-width: 1000px) { 
+@media (max-width: 1370px)  {
 	.about-me {
 		flex-direction: column-reverse;
 		flex-wrap: wrap;
-		height: 170vh;
 		justify-content: center;
 	}
 
 	.about-me-content {
 		width: 90%;
 		margin-top: 15px;
-		margin-left: 23px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.about-me img {
 		/*margin-left: auto;
 		margin-right: auto;
 		width: 45%;
-    	margin-top: 0;
-    	margin-bottom: 5px;*/
-    	margin-left: auto;
-    	margin-right: auto;
-   	 	width: 45%;
-    	margin-top: 5px;
-    	margin-bottom: 0px;
+			margin-top: 0;
+			margin-bottom: 5px;*/
+			margin-left: auto;
+			margin-right: auto;
+			width: 45%;
+			margin-top: 30px;
+			margin-bottom: 0px;
 	}
 
 	.about-me .button-holder{
 		width: 100%;
+		height: 100px;
 		display: flex;
 		justify-content: center;
-		flex-wrap: wrap;	
+		flex-wrap: wrap;
 	}
 
+	.contact{
+		flex-direction: column-reverse;
+		/* height: 75vh; */
+		/*flex-wrap: wrap;*/
+	}
+
+	.contact-content {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contact >img {
+		width: 40%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+		margin-bottom: 0;
+
+	}
+}
+
+
+
+@media (max-width: 991.98px) {
+	.header {
+		height: auto;
+	}
+
+	.header h1 {
+		margin-top: 150px;
+	}
+
+	.header h3 {
+		padding-bottom: 150px;
+	}
+
+	.about-me {
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+		/* height: 170vh; */
+		justify-content: center;
+	}
 
 	.all-projects {
 		flex-direction: column;
@@ -372,48 +417,30 @@ footer a {
 		margin-right: auto;
 	}
 
-	.contact{
-		flex-direction: column-reverse;
-		height: 75vh;
-		/*flex-wrap: wrap;*/
-	}
 
-	.contact-content {
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.contact >img {
-		width: 40%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 15px;
-		margin-bottom: 0;
-
-	}
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 575.98px) {
 	nav {
-		font-size: 16px;
+		font-size: 15px;
 	}
 
-	header > h1 {
-		font-size: 70px;
+	.header > h1 {
+		font-size: 75px;
 	}
 
-	header > h3 {
-		font-size: 25px;
+	.header > h3 {
+		font-size: 22px;
+		padding-top: 20px;
 	}
 
 	.about-me {
-		height: 212vh;
+		/* height: 212vh; */
 	}
 
 	.about-me .button-holder{
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 
 	.about-me > img {
@@ -425,7 +452,10 @@ footer a {
 	}
 
 	.btn-dark {
-		font-size: 16px;
+		font-size: 13px;
+		width: auto;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	.projects .button-holder{
@@ -446,7 +476,7 @@ footer a {
 	}
 
 	.contact {
-		height: 90vh;
+		/* height: 90vh; */
 	}
 
 	.contact > img {
