@@ -6,6 +6,23 @@ body {
 	min-width: 411px;
 	display: flex;
 	flex-direction: column;
+	margin: 0;
+}
+
+.animation {
+  margin: 0;
+  background: #222;
+  min-width: 960px;
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+circle {
+  fill: none;
+  stroke-width: 2.5px;
 }
 
 .container {
@@ -292,7 +309,7 @@ footer a {
 	.about-me {
 		flex-direction: column-reverse;
 		flex-wrap: wrap;
-		height: 150vh;
+		height: 170vh;
 		justify-content: center;
 	}
 
