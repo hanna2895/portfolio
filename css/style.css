@@ -10,22 +10,6 @@ body {
 	overflow-x: hidden;
 }
 
-.animation {
-  margin: 0;
-  background: #222;
-  min-width: 960px;
-}
-
-rect {
-  fill: none;
-  pointer-events: all;
-}
-
-circle {
-  fill: none;
-  stroke-width: 2.5px;
-}
-
 .container {
 	flex: 1 0 auto;
 }
@@ -232,27 +216,26 @@ h4 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-left: 100px;
-
+	margin-left: 30px;
+	margin-right: 30px;
 }
 
-i {
-	font-size: 90px;
-	letter-spacing: 1em;
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	color: black;
-	/*line-height: 1.4;*/
+svg {
+	height: 74%;
+	width: 100%;
 }
 
 .skill {
-	display: flex;
-	flex-direction: column;
+	width: 10%;
+	/* overflow: hidden; */
+	text-align: center;
+	margin: 20px;
 }
 
 span {
 	letter-spacing: 0.1em;
+	display: block;
+	font-size: 1em;
 }
 
 /* ---------------- contact -----------------------*/
@@ -292,7 +275,7 @@ span {
 	margin-left: auto;*/
 	border-radius: 100%;
 	margin-right: 20px;
-	max-height: 30vh;
+	max-height: 35vh;
 }
 
 /*----------------- footer -------------------------*/
@@ -336,6 +319,7 @@ footer a {
 			width: 45%;
 			margin-top: 30px;
 			margin-bottom: 0px;
+			max-height: unset;
 	}
 
 	.about-me .button-holder{
@@ -364,7 +348,7 @@ footer a {
 		margin-right: auto;
 		margin-top: 30px;
 		margin-bottom: 0;
-
+		max-height: unset;
 	}
 }
 
