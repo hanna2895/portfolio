@@ -76,7 +76,7 @@ nav a {
 /*-------------- about me section styles --------------------*/
 
 .about-me {
-	/*height: 675px;*/
+	/* height: 675px; */
 	height: auto;
 	background-color: #e9f4e8;
 	color: black;
@@ -116,6 +116,7 @@ nav a {
 	margin-left: auto;*/
 	border-radius: 100%;
 	margin-right: 30px;
+	max-height: 35vh;
 }
 
 .btn-dark {
@@ -262,6 +263,8 @@ span {
 	height: auto;
 	/*max-height: 1000px;*/
 	display: flex;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .contact-content {
@@ -289,6 +292,7 @@ span {
 	margin-left: auto;*/
 	border-radius: 100%;
 	margin-right: 20px;
+	max-height: 30vh;
 }
 
 /*----------------- footer -------------------------*/
@@ -311,6 +315,7 @@ footer a {
 		flex-direction: column-reverse;
 		flex-wrap: wrap;
 		justify-content: center;
+		height: auto;
 	}
 
 	.about-me-content {
