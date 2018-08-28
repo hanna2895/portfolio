@@ -83,7 +83,7 @@ img {
 }
 
 @media (max-width: 1307px) {
-  img {
+  .container > img {
     display: none;
   }
 }
@@ -129,6 +129,33 @@ ul, li {
 	height: 50vh;
 }
 
+@media (max-width: 800px) {
+	.skills-holder {
+		flex-direction: column;
+		height: auto;
+	}
+	.blog-skills {
+		margin-top: 3vh;
+		width: unset !important;
+	}
+	.dev-skills {
+		width: 100% !important;
+	}
+	.links {
+		text-align: left !important;
+		/* margin-top: 3vh; */
+		margin-bottom: 3vh;
+	}
+	.links > ul {
+		flex-direction: column;
+		height: 20vh;
+		flex-wrap: wrap;
+	}
+	nav {
+		width: 100vw;
+	}
+}
+
 #agile {
 	margin-top: 2vh;
 }
@@ -162,6 +189,170 @@ ul, li {
 	justify-content: space-around;
 	padding-top: 3vh;
 }
+
+
+/* portfolio page */
+
+.portfolio-container, .dev-container, .writing-container {
+	margin-top: 10vh;
+	text-align: center;
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.teaser {
+	margin-top: 35vh;
+	margin-bottom: 45vh;
+}
+
+.filler {
+	height: 10vh;
+}
+
+.button-holder {
+	display: flex;
+	justify-content: space-around;
+}
+
+.button-holder > div, .card-body > div {
+	background-color: black;
+	color: white;
+	width: 40%;
+	height: 10vh;
+	padding-top: 3vh;
+	font-family: 'Martel', serif;
+	font-size: 1.5em;
+	border-radius: 10px;
+}
+
+.button {
+	color: white;
+}
+
+.featured, .project {
+	display: flex;
+}
+
+.image-holder > img {
+	max-width: 20vw;
+	width: 19vw;
+	height: auto;
+	margin-top: 1vh;
+	/* margin-left: 0; */
+}
+
+/* .image-holder {
+	margin-left: 0;
+} */
+
+.project {
+	margin-top: 5vh;
+}
+
+.info {
+	margin-left: 5vw;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: left;
+	/* width: 80%; */
+	/* float: left; */
+}
+
+@media (max-width: 800px) {
+	.featured, .project {
+		flex-direction: column;
+		/* height: auto; */
+	}
+	nav > a {
+		font-size: 12px;
+		padding-bottom: 2vh;
+	}
+	nav {
+		height: 8vh;
+	}
+	.button-holder > div {
+		/* font-size: 24px; */
+		width: 60vw;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 20px;
+		margin-top: 3vh;
+	}
+	.button-holder {
+		flex-direction: column;
+
+	}
+	h2 {
+		font-size: 32px;
+	}
+	.info > h3 {
+		margin-top: 4vh;
+		font-size: 24px;
+	}
+	.dev-container {
+		height: auto;
+	}
+	.featured > img {
+		margin-left: 0;
+		width: 100%;
+	}
+	.featured > div, .project > div {
+		margin-left: 0vw;
+	}
+	.hidden {
+		display: none;
+	}
+	.image-holder > img {
+		width: 100%;
+		margin-left: 0;
+		max-width: unset;
+	}
+	.image-holder {
+		height: auto;
+	}
+	.btn-outline-dark {
+		margin-top: 1vh;
+	}
+}
+
+/* writing cards */
+
+.card {
+	width: 20vw;
+	/* height: 38vh; */
+	/* padding-bottom: 2vh; */
+}
+
+.card > img {
+	width: 100%;
+	max-height: 15vh;
+	/* max-width: 20vw; */
+	margin-left: 0;
+	border-radius: 3px 3px 0 0;
+}
+
+.card-body {
+	padding: 0.75rem;
+}
+
+.card-body > p {
+	margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+	.card {
+		width: 50%;
+	}
+}
+
+@media (max-width: 575px) {
+	.card {
+		width: 100%;
+	}
+}
+
 
 /* animations */
 
