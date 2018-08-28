@@ -46,7 +46,7 @@ h3{
   width: 90vw;
   margin-top: 10vh;
   display: flex;
-	height: 85vh;
+	/* height: 85vh; */
 }
 
 p {
@@ -126,7 +126,7 @@ ul, li {
 
 .skills-holder {
 	display: flex;
-	height: 50vh;
+	height: 45vh;
 }
 
 @media (max-width: 800px) {
@@ -188,6 +188,17 @@ ul, li {
 	display: flex;
 	justify-content: space-around;
 	padding-top: 3vh;
+}
+
+@media (max-width: 800px) {
+	.link-list {
+		height: auto;
+		width: 100%;
+		display: block !important;
+	}
+	.link-list > li {
+		display: inline;
+	}
 }
 
 
@@ -353,6 +364,78 @@ ul, li {
 	}
 }
 
+/* hire */
+
+.hire-content {
+	width: 100%;
+}
+
+.hire-content > h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6em;
+}
+
+.services > li {
+	list-style: initial !important;
+	margin-left: 2vw;
+	font-size: 1.2em;
+}
+
+.btn-lg {
+	margin-top: 2vh;
+	height: auto;
+	word-wrap: break-word;
+}
+
+.button-break {
+	visibility: hidden;
+}
+
+@media (max-width: 800px) {
+	.hire-content > h1 {
+		font-size: 40px;
+	}
+	.hire-content > h3 {
+		font-size: 22px;
+	}
+	.services > li {
+		margin-left: 6vw;
+	}
+	.button-break {
+		visibility: visible;
+	}
+	.btn-lg {
+		width: 100%;
+		/* overflow: auto; */
+	}
+}
+
+
+/* footer */
+footer {
+	text-align: center;
+	margin-top: 5vh;
+	padding-bottom: 2vh;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+footer > p {
+	margin-bottom: 1vh;
+	display: inline;
+}
+
+@media (max-width: 800px) {
+	footer > p {
+		display: block
+	}
+	footer {
+		margin-top: 10vh;
+	}
+}
+
+.icon {
+	height: 4vh;
+}
 
 /* animations */
 
