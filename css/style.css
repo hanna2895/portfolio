@@ -23,7 +23,7 @@ a:hover {
 	color: #9A9D9A;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Martel', serif;
 }
 
@@ -269,6 +269,20 @@ ul, li {
 	text-align: left;
 	/* width: 80%; */
 	/* float: left; */
+}
+
+.mobile-hidden {
+	display: none;
+}
+h4 {
+	color: gray;
+	font-size: 18px;
+	font-style: oblique;
+}
+@media screen and (max-width: 415px) {
+	.mobile-hidden {
+		display: unset;
+	}
 }
 
 @media (max-width: 800px) {
